@@ -1,0 +1,171 @@
+ /* Custom CSS */
+        :root {
+            --primary-color: #537cd4;
+            --secondary-color: #6098e7;
+            --dark-color: #121212;
+            --light-color: #f5f5f5;
+            --success-color: #4CAF50;
+            --error-color: #f44336;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .editor-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            max-height: 100vh;
+        }
+        
+        .editor-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .editor-title {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .editor-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        select, button {
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: none;
+            background-color: var(--secondary-color);
+            color: white;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        
+        select:hover, button:hover {
+            background-color: #7b1fa2;
+        }
+        
+        button.run-btn {
+            background-color: var(--success-color);
+        }
+        
+        button.run-btn:hover {
+            background-color: #3d8b40;
+        }
+        
+        button.clear-btn {
+            background-color: var(--error-color);
+        }
+        
+        button.clear-btn:hover {
+            background-color: #d32f2f;
+        }
+        
+        .CodeMirror {
+            height: 60vh;
+            font-size: 14px;
+            line-height: 1.5;
+            border: 1px solid #333;
+            flex-grow: 1;
+        }
+        
+        .output-container {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-top: none;
+            padding: 15px;
+            max-height: 30vh;
+            overflow-y: auto;
+        }
+        
+        .output-title {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+        }
+        
+        #output {
+            white-space: pre-wrap;
+            font-family: 'Consolas', 'Monaco', monospace;
+        }
+        
+        .error {
+            color: var(--error-color);
+        }
+        
+        .success {
+            color: var(--success-color);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .editor-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .editor-controls {
+                width: 100%;
+            }
+            
+            select, button {
+                flex-grow: 1;
+            }
+            
+            .CodeMirror {
+                height: 50vh;
+            }
+            
+            .output-container {
+                max-height: 25vh;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .editor-title {
+                font-size: 1.2rem;
+            }
+            
+            .CodeMirror {
+                height: 40vh;
+                font-size: 13px;
+            }
+            
+            .output-container {
+                max-height: 20vh;
+                padding: 10px;
+            }
+        }
