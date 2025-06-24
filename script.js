@@ -158,6 +158,25 @@ editor.setOption("extraKeys", {
   "Ctrl-Space": "autocomplete"
 });
 
+
+function মনে_রাখ(s,kidiye){
+    if(!kidiye){
+        console.log("কি দিয়ে মনে রাখব বল?");
+    }
+
+    localStorage.setItem(kidiye,s);
+    console.log("মনে রাখলাম...");
+
+}
+function মনে_আছে(ki){
+    if(localStorage.getItem(ki)){
+        console.log("হুম! "+localStorage.getItem(ki))
+    }else{
+        console.log("এরকম কিছু মনে রাখার কথা ছিল না")
+    }
+
+}
+
 function ইনপুট(s) {
     var pmp = window.prompt(s);
     return pmp;
