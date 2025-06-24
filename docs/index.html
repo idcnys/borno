@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>বর্ণ প্রোগ্রামিং ভাষা ডকুমেন্টেশন</title>
+    <style>
+        body {
+            font-family: 'SolaimanLipi', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        pre {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            border-left: 4px solid #3498db;
+        }
+        .snippet {
+            margin-bottom: 30px;
+        }
+        .copy-btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            float: right;
+        }
+        .copy-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>বর্ণ প্রোগ্রামিং ভাষা ডকুমেন্টেশন</h1>
+    
+    <section id="introduction">
+        <h2>ভূমিকা</h2>
+        <p>বর্ণ একটি বাংলা স্ক্রিপ্টিং ভাষা যা বাংলা ভাষাভাষী প্রোগ্রামারদের জন্য ডিজাইন করা হয়েছে। এটি সহজে বোধগম্য সিনট্যাক্স এবং বাংলা কীওয়ার্ড ব্যবহার করে।</p>
+    </section>
+    
+    <section id="basic-syntax">
+        <h2>মৌলিক সিনট্যাক্স</h2>
+        
+        <div class="snippet">
+            <h3>১. চলক ঘোষণা</h3>
+            <button class="copy-btn" onclick="copyCode('snippet1')">কপি করুন</button>
+            <pre id="snippet1"><code>ধরি সংখ্যা = ১০
+ধরি নাম = "আব্দুল"
+ধরি আমি_ভালো= মিথ্যা</code></pre>
+        </div>
+        
+        <div class="snippet">
+            <h3>২. শর্তসাপেক্ষ বিবৃতি (যদি-অথবা-নাহলে)</h3>
+            <button class="copy-btn" onclick="copyCode('snippet2')">কপি করুন</button>
+            <pre id="snippet2"><code>ধরি বয়স = ১৮
+
+যদি (বয়স >= ১৮) {
+    দেখাও("আপনি ভোট দিতে পারবেন")
+} অথবা (বয়স >= ১৩) {
+    দেখাও("আপনি টিনএজার")
+} নাহলে {
+    দেখাও("আপনি শিশু")
+}</code></pre>
+        </div>
+        
+        <div class="snippet">
+            <h3>৩. লুপ (যখন)</h3>
+            <button class="copy-btn" onclick="copyCode('snippet3')">কপি করুন</button>
+            <pre id="snippet3"><code>ধরি গণনা = ১
+
+যখন (গণনা <= ১০) {
+    দেখাও(গণনা)
+    গণনা = গণনা + ১
+}</code></pre>
+        </div>
+    </section>
+    
+    <section id="functions">
+        <h2>ফাংশন</h2>
+        
+        <div class="snippet">
+            <h3>৪. সাধারণ ফাংশন</h3>
+            <button class="copy-btn" onclick="copyCode('snippet4')">কপি করুন</button>
+            <pre id="snippet4"><code>প্রক্রিয়া যোগফল(ক, খ) {
+    ফেরত_দাও ক + খ
+}
+
+দেখাও(যোগফল(৫, ৭))  // ১২ দেখাবে</code></pre>
+        </div>
+        
+        <div class="snippet">
+            <h3>৫. ডিফল্ট প্যারামিটার সহ ফাংশন</h3>
+            <button class="copy-btn" onclick="copyCode('snippet5')">কপি করুন</button>
+            <pre id="snippet5"><code>প্রক্রিয়া অভিবাদন(নাম = "আতিথ্য") {
+    দেখাও("স্বাগতম " + নাম)
+}
+
+অভিবাদন()           // "স্বাগতম আতিথ্য" দেখাবে
+অভিবাদন("রহিম")     // "স্বাগতম রহিম" দেখাবে</code></pre>
+        </div>
+    </section>
+    
+    <section id="data-structures">
+        <h2>ডাটা স্ট্রাকচার</h2>
+        
+        <div class="snippet">
+            <h3>৬. অ্যারে (তালিকা)</h3>
+            <button class="copy-btn" onclick="copyCode('snippet6')">কপি করুন</button>
+            <pre id="snippet6"><code>ধরি ফল = ["আম", "কলা", "পেঁপে"]
+
+প্রতিটি (ফলের_নাম ফল এ) {
+    দেখাও(ফলের_নাম)
+}
+
+// আউটপুট:
+// আম
+// কলা
+// পেঁপে</code></pre>
+        </div>
+        
+        <div class="snippet">
+            <h3>৭. অবজেক্ট</h3>
+            <button class="copy-btn" onclick="copyCode('snippet7')">কপি করুন</button>
+            <pre id="snippet7"><code>ধরি ছাত্র = {
+    নাম: "করিম",
+    বয়স: ২০,
+    রোল: ১২৩
+}
+
+দেখাও("করিমের রোল "+ ছাত্র.রোল)  //"করিম এর রোল ১২৩" দেখাবে</code></pre>
+        </div>
+    </section>
+    
+    <section id="classes">
+        <h2>ক্লাস ও অবজেক্ট</h2>
+        
+        <div class="snippet">
+            <h3>৮. ক্লাস ডিফিনিশন</h3>
+            <button class="copy-btn" onclick="copyCode('snippet8')">কপি করুন</button>
+            <pre id="snippet8"><code>উপাদান গাড়ি {
+    বানাও(মডেল, রঙ) {
+        এটায়.মডেল = মডেল
+        এটায়.রঙ = রঙ
+    }
+    
+    তথ্য_দেখাও() {
+        দেখাও("মডেল: " + এটায়.মডেল + ", রঙ: " + এটায়.রঙ)
+    }
+}
+
+ধরি আমার_গাড়ি = নতুন গাড়ি("টয়োটা", "নীল")
+আমার_গাড়ি.তথ্য_দেখাও()</code></pre>
+        </div>
+        
+        <div class="snippet">
+            <h3>৯. ইনহেরিটেন্স</h3>
+            <button class="copy-btn" onclick="copyCode('snippet9')">কপি করুন</button>
+            <pre id="snippet9"><code>উপাদান প্রাণী {
+    বানাও(নাম) {
+        এটায়.নাম = নাম
+    }
+    
+    খাও() {
+        দেখাও(এটায়.নাম + " খাবার খাচ্ছে")
+    }
+}
+
+অভেদ বিড়াল প্রাণী থেকে {
+    বানাও(নাম, রঙ) {
+        সুপার(নাম)
+        এটায়.রঙ = রঙ
+    }
+    
+    মিউ() {
+        দেখাও(এটায়.নাম + " মিউ মিউ করছে!")
+    }
+}
+
+ধরি বিল্লু = নতুন বিড়াল("বিল্লু", "কালো")
+বিল্লু.খাও()  # "বিল্লু খাবার খাচ্ছে" দেখাবে
+বিল্লু.মিউ()  # "বিল্লু মিউ মিউ করছে!" দেখাবে</code></pre>
+        </div>
+    </section>
+    
+    <section id="advanced">
+        <h2>অ্যাডভান্সড কনসেপ্ট</h2>
+        
+        <div class="snippet">
+            <h3>১০. রিকার্সিভ ফাংশন</h3>
+            <button class="copy-btn" onclick="copyCode('snippet10')">কপি করুন</button>
+            <pre id="snippet10"><code>প্রক্রিয়া ফ্যাক্টোরিয়াল(সংখ্যা) {
+    যদি (সংখ্যা <= ১) {
+        ফেরত_দাও ১
+    }
+    ফেরত_দাও সংখ্যা * ফ্যাক্টোরিয়াল(সংখ্যা - ১)
+}
+
+দেখাও(ফ্যাক্টোরিয়াল(৫))  // ১২০ দেখাবে</code></pre>
+        </div>
+        
+        <div class="snippet">
+            <h3>১১. ক্লোজার</h3>
+            <button class="copy-btn" onclick="copyCode('snippet11')">কপি করুন</button>
+            <pre id="snippet11"><code>প্রক্রিয়া কাউন্টার_বানাও() {
+    ধরি গণনা = ০
+    
+    প্রক্রিয়া বৃদ্ধি() {
+        গণনা = গণনা + ১
+        দেখাও(গণনা)
+    }
+    
+    ফেরত_দাও বৃদ্ধি
+}
+
+ধরি আমার_কাউন্টার = কাউন্টার_বানাও()
+আমার_কাউন্টার()  // ১ দেখাবে
+আমার_কাউন্টার()  // ২ দেখাবে
+আমার_কাউন্টার()  // ৩ দেখাবে</code></pre>
+        </div>
+        
+        <div class="snippet">
+            <h3>১২. প্রমিস ও অ্যাসিঙ্ক/অপেক্ষা</h3>
+            <button class="copy-btn" onclick="copyCode('snippet12')">কপি করুন</button>
+            <pre id="snippet12"><code>প্রক্রিয়া ডাটা_আনো() {
+    ফেরত_দাও নতুন প্রমিস((সমাধান, প্রত্যাখ্যান) => {
+        অপেক্ষা(২০০০)  # ২ সেকেন্ড অপেক্ষা
+        সমাধান("ডাটা লোড হয়েছে")
+    })
+}
+
+অ্যাসিঙ্ক প্রক্রিয়া প্রধান() {
+    দেখাও("ডাটা লোড হচ্ছে...")
+    ধরি ফলাফল = অপেক্ষা ডাটা_আনো()
+    দেখাও(ফলাফল)
+}
+
+প্রধান()</code></pre>
+        </div>
+    </section>
+    
+    <section id="error-handling">
+        <h2>এরর হ্যান্ডলিং</h2>
+        
+        <div class="snippet">
+            <h3>১৩. চেষ্টা-ধরা ব্লক</h3>
+            <button class="copy-btn" onclick="copyCode('snippet13')">কপি করুন</button>
+            <pre id="snippet13"><code>প্রক্রিয়া ভাগফল(ভাজ্য, ভাজক) {
+    যদি (ভাজক == ০) {
+        ছুঁড়ে_দাও নতুন এরর("ভাজক শূন্য হতে পারবে না")
+    }
+    ফেরত_দাও ভাজ্য / ভাজক
+}
+
+চেষ্টা {
+    দেখাও(ভাগফল(১০, ০))
+} ধরা (এরর) {
+    দেখাও("একটি ত্রুটি ঘটেছে: " + এরর.বার্তা)
+} শেষে {
+    দেখাও("প্রক্রিয়া সম্পন্ন")
+}</code></pre>
+        </div>
+    </section>
+    
+    <section id="file-io">
+        <h2>ফাইল ইনপুট/আউটপুট</h2>
+        
+        <div class="snippet">
+            <h3>১৪. ফাইল পড়া</h3>
+            <button class="copy-btn" onclick="copyCode('snippet14')">কপি করুন</button>
+            <pre id="snippet14"><code>অ্যাসিঙ্ক প্রক্রিয়া ফাইল_পড়ো(ফাইলের_পথ) {
+    ধরি ডাটা = অপেক্ষা ফাইল_সিস্টেম.পড়ো(ফাইলের_পথ, "utf-8")
+    দেখাও(ডাটা)
+}
+
+চেষ্টা {
+    অপেক্ষা ফাইল_পড়ো("ডাটা.txt")
+} ধরা (এরর) {
+    দেখাও("ফাইল পড়তে সমস্যা: " + এরর.বার্তা)
+}</code></pre>
+        </div>
+        
+        <div class="snippet">
+            <h3>১৫. ফাইলে লেখা</h3>
+            <button class="copy-btn" onclick="copyCode('snippet15')">কপি করুন</button>
+            <pre id="snippet15"><code>অ্যাসিঙ্ক প্রক্রিয়া ফাইলে_লেখো(ফাইলের_পথ, বিষয়বস্তু) {
+    অপেক্ষা ফাইল_সিস্টেম.লেখো(ফাইলের_পথ, বিষয়বস্তু, "utf-8")
+    দেখাও("ফাইলে সফলভাবে লেখা হয়েছে")
+}
+
+ফাইলে_লেখো("লগ.txt", "নতুন লগ এন্ট্রি")</code></pre>
+        </div>
+    </section>
+    
+    <section id="modules">
+        <h2>মডিউল সিস্টেম</h2>
+        
+        <div class="snippet">
+            <h3>১৬. মডিউল ইম্পোর্ট</h3>
+            <button class="copy-btn" onclick="copyCode('snippet16')">কপি করুন</button>
+            <pre id="snippet16"><code># গণিত.বর্ণ ফাইলে
+প্রক্রিয়া যোগ(ক, খ) {
+    ফেরত_দাও ক + খ
+}
+
+প্রক্রিয়া গুণ(ক, খ) {
+    ফেরত_দাও ক * খ
+}
+
+// প্রধান ফাইলে
+ইম্পোর্ট { যোগ, গুণ } থেকে "গণিত.বর্ণ"
+
+দেখাও(যোগ(২, ৩))  # ৫ দেখাবে
+দেখাও(গুণ(২, ৩))  # ৬ দেখাবে</code></pre>
+        </div>
+        
+        <div class="snippet">
+            <h3>১৭. ডিফল্ট ইম্পোর্ট</h3>
+            <button class="copy-btn" onclick="copyCode('snippet17')">কপি করুন</button>
+            <pre id="snippet17"><code># ইউটিল.বর্ণ ফাইলে
+প্রক্রিয়া বর্গ(সংখ্যা) {
+    ফেরত_দাও সংখ্যা * সংখ্যা
+}
+
+ফেরত_দাও বর্গ
+
+# প্রধান ফাইলে
+ইম্পোর্ট বর্গ থেকে "ইউটিল.বর্ণ"
+
+দেখাও(বর্গ(৪))  # ১৬ দেখাবে</code></pre>
+        </div>
+    </section>
+    
+    <section id="functional">
+        <h2>ফাংশনাল প্রোগ্রামিং</h2>
+        
+        <div class="snippet">
+            <h3>১৮. ম্যাপ</h3>
+            <button class="copy-btn" onclick="copyCode('snippet18')">কপি করুন</button>
+            <pre id="snippet18"><code>ধরি সংখ্যা = [১, ২, ৩, ৪, ৫]
+ধরি বর্গ = সংখ্যা.মানচিত্র(প্রতি => প্রতি * প্রতি)
+
+দেখাও(বর্গ)  # [১, ৪, ৯, ১৬, ২৫] দেখাবে</code></pre>
+        </div>
+        
+        <div class="snippet">
+            <h3>১৯. ফিল্টার</h3>
+            <button class="copy-btn" onclick="copyCode('snippet19')">কপি করুন</button>
+            <pre id="snippet19"><code>ধরি সংখ্যা = [১, ২, ৩, ৪, ৫, ৬, ৭, ৮, ৯, ১০]
+ধরি জোড় = সংখ্যা.ছাঁকনি(প্রতি => প্রতি % ২ == ০)
+
+দেখাও(জোড়)  # [২, ৪, ৬, ৮, ১০] দেখাবে</code></pre>
+        </div>
+        
+        <div class="snippet">
+            <h3>২০. রিডিউস</h3>
+            <button class="copy-btn" onclick="copyCode('snippet20')">কপি করুন</button>
+            <pre id="snippet20"><code>ধরি সংখ্যা = [১, ২, ৩, ৪, ৫]
+ধরি যোগফল = সংখ্যা.হ্রাস((সমষ্টি, বর্তমান) => সমষ্টি + বর্তমান, ০)
+
+দেখাও(যোগফল)  # ১৫ দেখাবে</code></pre>
+        </div>
+    </section>
+    
+    <section id="oop">
+        <h2>অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং</h2>
+        
+        <div class="snippet">
+            <h3>২১. গেটার/সেটার</h3>
+            <button class="copy-btn" onclick="copyCode('snippet21')">কপি করুন</button>
+            <pre id="snippet21"><code>উপাদান ব্যক্তি {
+    বানাও(নাম, বয়স) {
+        এটায়.নাম = নাম
+        এটায়.বয়স = বয়স
+    }
+    
+    পান_বিবরণ() {
+        ফেরত_দাও এটায়.নাম + " (" + এটায়.বয়স + " বছর)"
+    }
+    
+    সেট_বয়স(নতুন_বয়স) {
+        যদি (নতুন_বয়স < ০) {
+            ছুঁড়ে_দাও নতুন এরর("বয়স ঋণাত্মক হতে পারবে না")
+        }
+        এটায়.বয়স = নতুন_বয়স
+    }
+}
+
+ধরি আমি = নতুন ব্যক্তি("করিম", ২৫)
+দেখাও(আমি.পান_বিবরণ())  //"করিম (২৫ বছর)" দেখাবে
+আমি.সেট_বয়স(২৬)
+দেখাও(আমি.পান_বিবরণ())  //"করিম (২৬ বছর)" দেখাবে</code></pre>
+        </div>
+        
+        <div class="snippet">
+            <h3>২২. স্ট্যাটিক মেথড</h3>
+            <button class="copy-btn" onclick="copyCode('snippet22')">কপি করুন</button>
+            <pre id="snippet22"><code>উপাদান গণিত {
+    স্ট্যাটিক বর্গমূল(সংখ্যা) {
+        ফেরত_দাও সংখ্যা ** ০.৫
+    }
+}
+
+দেখাও(গণিত.বর্গমূল(১৬))  # ৪ দেখাবে</code></pre>
+        </div>
+    </section>
+    
+    <section id="async">
+        <h2>অ্যাসিঙ্ক্রোনাস প্রোগ্রামিং</h2>
+        
+        <div class="snippet">
+            <h3>২৩. মাল্টিপল প্রমিস</h3>
+            <button class="copy-btn" onclick="copyCode('snippet23')">কপি করুন</button>
+            <pre id="snippet23"><code>প্রক্রিয়া ডিলে(সময়, মান) {
+    ফেরত_দাও নতুন প্রমিস((সমাধান) => {
+        অপেক্ষা(সময়)
+        সমাধান(মান)
+    })
+}
+
+অ্যাসিঙ্ক প্রক্রিয়া প্রধান() {
+    ধরি [ফলাফল১, ফলাফল২] = অপেক্ষা প্রমিস.সব([
+        ডিলে(১০০০, "প্রথম"),
+        ডিলে(২০০০, "দ্বিতীয়")
+    ])
+    
+    দেখাও(ফলাফল১, ফলাফল২)
+}
+
+প্রধান()</code></pre>
+        </div>
+        
+        <div class="snippet">
+            <h3>২৪. প্রমিস রেস</h3>
+            <button class="copy-btn" onclick="copyCode('snippet24')">কপি করুন</button>
+            <pre id="snippet24"><code>প্রক্রিয়া সময়_নির্বাচন(সময়, মান) {
+    ফেরত_দাও নতুন প্রমিস((সমাধান) => {
+        অপেক্ষা(সময়)
+        সমাধান(মান)
+    })
+}
+
+অ্যাসিঙ্ক প্রক্রিয়া প্রধান() {
+    ধরি বিজয়ী = অপেক্ষা প্রমিস.প্রতিযোগিতা([
+        সময়_নির্বাচন(৩০০, "ধীর"),
+        সময়_নির্বাচন(১০০, "দ্রুত"),
+        সময়_নির্বাচন(২০০, "মধ্যম")
+    ])
+    
+    দেখাও("বিজয়ী: " + বিজয়ী)  # "বিজয়ী: দ্রুত" দেখাবে
+}
+
+প্রধান()</code></pre>
+        </div>
+    </section>
+    
+    <section id="regex">
+        <h2>রেগুলার এক্সপ্রেশন</h2>
+        
+        <div class="snippet">
+            <h3>২৫. প্যাটার্ন ম্যাচিং</h3>
+            <button class="copy-btn" onclick="copyCode('snippet25')">কপি করুন</button>
+            <pre id="snippet25"><code>ধরি পাঠ্য = "আমার ফোন নম্বর হলো ০১৭১২৩৪৫৬৭৮"
+ধরি প্যাটার্ন = /০১[৩-৯]\d{৮}/g
+ধরি মিল = পাঠ্য.মেলান(প্যাটার্ন)
+
+যদি (মিল) {
+    দেখাও("ফোন নম্বর পাওয়া গেছে: " + মিল[০])
+} নাহলে {
+    দেখাও("কোন ফোন নম্বর পাওয়া যায়নি")
+}</code></pre>
+        </div>
+    </section>
+    
+    <section id="dom">
+        <h2>DOM ম্যানিপুলেশন</h2>
+        
+        <div class="snippet">
+            <h3>২৬. এলিমেন্ট সিলেক্ট ও মডিফাই</h3>
+            <button class="copy-btn" onclick="copyCode('snippet26')">কপি করুন</button>
+            <pre id="snippet26"><code>ধরি শিরোনাম = ডকুমেন্ট.নির্বাচন("#শিরোনাম")
+ধরি বোতাম = ডকুমেন্ট.নির্বাচন("#বোতাম")
+
+বোতাম.শোনো("ক্লিক", প্রক্রিয়া() {
+    শিরোনাম.বিষয়বস্তু = "আপনি বোতাম ক্লিক করেছেন!"
+    শিরোনাম.স্টাইল.রঙ = "নীল"
+})</code></pre>
+        </div>
+    </section>
+    
+    <section id="events">
+        <h2>ইভেন্ট হ্যান্ডলিং</h2>
+        
+        <div class="snippet">
+            <h3>২৭. ইভেন্ট লিসেনার</h3>
+            <button class="copy-btn" onclick="copyCode('snippet27')">কপি করুন</button>
+            <pre id="snippet27"><code>ধরি ফর্ম = ডকুমেন্ট.নির্বাচন("#আমার_ফর্ম")
+ধরি ইনপুট = ডকুমেন্ট.নির্বাচন("#নাম")
+
+ফর্ম.শোনো("জমা", প্রক্রিয়া(ঘটনা) {
+    ঘটনা.প্রতিরোধ()
+    দেখাও("নাম জমা দেওয়া হয়েছে: " + ইনপুট.মান)
+})</code></pre>
+        </div>
+    </section>
+    
+    <section id="storage">
+        <h2>স্টোরেজ</h2>
+        
+        <div class="snippet">
+            <h3>২৮. লোকাল স্টোরেজ</h3>
+            <button class="copy-btn" onclick="copyCode('snippet28')">কপি করুন</button>
+            <pre id="snippet28"><code># ডাটা সেভ করা
+স্থানীয়_সংগ্রহ.সেট("ব্যবহারকারী", {
+    নাম: "রহিম",
+    ইমেইল: "rahim@example.com",
+    লগইন_সময়: নতুন তারিখ()
+})
+
+# ডাটা পড়া
+ধরি ব্যবহারকারী = স্থানীয়_সংগ্রহ.গেট("ব্যবহারকারী")
+দেখাও(ব্যবহারকারী.নাম)</code></pre>
+        </div>
+    </section>
+    
+    <section id="api">
+        <h2>API কল</h2>
+        
+        <div class="snippet">
+            <h3>২৯. ফেচ API</h3>
+            <button class="copy-btn" onclick="copyCode('snippet29')">কপি করুন</button>
+            <pre id="snippet29"><code>অ্যাসিঙ্ক প্রক্রিয়া ডাটা_আনো() {
+    চেষ্টা {
+        ধরি প্রতিক্রিয়া = অপেক্ষা আনো("https://api.example.com/data")
+        যদি (!প্রতিক্রিয়া.ঠিক) {
+            ছুঁড়ে_দাও নতুন এরর("নেটওয়ার্ক প্রতিক্রিয়া ঠিক নেই")
+        }
+        ধরি ডাটা = অপেক্ষা প্রতিক্রিয়া.জেসন()
+        দেখাও(ডাটা)
+    } ধরা (এরর) {
+        দেখাও("API কল ব্যর্থ: " + এরর.বার্তা)
+    }
+}
+
+ডাটা_আনো()</code></pre>
+        </div>
+    </section>
+    
+    <section id="template">
+        <h2>টেমপ্লেট প্রোজেক্ট</h2>
+        
+        <div class="snippet">
+            <h3>৩০. সম্পূর্ণ টো-ডো অ্যাপ</h3>
+            <button class="copy-btn" onclick="copyCode('snippet30')">কপি করুন</button>
+            <pre id="snippet30"><code>অভেদ টাস্ক {
+    বানাও(শিরোনাম, সম্পন্ন = মিথ্যা) {
+        এটায়.শিরোনাম = শিরোনাম
+        এটায়.সম্পন্ন = সম্পন্ন
+    }
+}
+
+অভেদ টাস্কম্যানেজার {
+    বানাও() {
+        এটায়.টাস্কগুলি = []
+    }
+    
+    টাস্ক_যোগ(শিরোনাম) {
+        ধরি নতুন_টাস্ক = নতুন টাস্ক(শিরোনাম)
+        এটায়.টাস্কগুলি.যোগ(নতুন_টাস্ক)
+        এটায়.রেন্ডার()
+    }
+    
+    টাস্ক_টগল(সূচক) {
+        এটায়.টাস্কগুলি[সূচক].সম্পন্ন = !এটায়.টাস্কগুলি[সূচক].সম্পন্ন
+        এটায়.রেন্ডার()
+    }
+    
+    রেন্ডার() {
+        ধরি তালিকা = ডকুমেন্ট.নির্বাচন("#টাস্ক-তালিকা")
+        তালিকা.বিষয়বস্তু = ""
+        
+        এটায়.টাস্কগুলি.প্রতিটি((টাস্ক, সূচক) => {
+            ধরি আইটেম = ডকুমেন্ট.তৈরি("li")
+            আইটেম.বিষয়বস্তু = টাস্ক.শিরোনাম
+            
+            যদি (টাস্ক.সম্পন্ন) {
+                আইটেম.শ্রেণী.যোগ("সম্পন্ন")
+            }
+            
+            আইটেম.শোনো("ক্লিক", () => এটায়.টাস্ক_টগল(সূচক))
+            তালিকা.যোগ(আইটেম)
+        })
+    }
+}
+
+ধরি ম্যানেজার = নতুন টাস্কম্যানেজার()
+
+ধরি ফর্ম = ডকুমেন্ট.নির্বাচন("#টাস্ক-ফর্ম")
+ধরি ইনপুট = ডকুমেন্ট.নির্বাচন("#নতুন-টাস্ক")
+
+ফর্ম.শোনো("জমা", (ঘটনা) => {
+    ঘটনা.প্রতিরোধ()
+    যদি (ইনপুট.মান) {
+        ম্যানেজার.টাস্ক_যোগ(ইনপুট.মান)
+        ইনপুট.মান = ""
+    }
+})</code></pre>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© ২০২৩ বর্ণ প্রোগ্রামিং ভাষা ডকুমেন্টেশন। সকল অধিকার সংরক্ষিত।</p>
+    </footer>
+
+    <script>
+        function copyCode(id) {
+            const codeElement = document.getElementById(id);
+            const range = document.createRange();
+            range.selectNode(codeElement);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+            
+            const button = codeElement.nextElementSibling;
+            const originalText = button.textContent;
+            button.textContent = "কপি হয়েছে!";
+            setTimeout(() => {
+                button.textContent = originalText;
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
