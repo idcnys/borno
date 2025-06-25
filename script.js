@@ -24,7 +24,7 @@ const dic = {
   "বানাও": "constructor",
   "এটা": "this",
   "নতুন": "new",
-  "চেষ্টা কর":"try",
+  "পারলে":"try",
   "না পারলে ":"catch",
   "সাথে আছে":"extends",
   "শেষে":"finally",
