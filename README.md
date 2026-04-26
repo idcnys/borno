@@ -5,6 +5,7 @@ Borno is a **Bengali keyword-based JavaScript layer** that lets you write JavaSc
 ---
 
 ## Try Borno Editor ->[Website URL](https://borno-app.vercel.app/)
+## Read GPT generated docs -> [Website URL](https://borno-app.vercel.app/docs)
 
 ## Overview
 
