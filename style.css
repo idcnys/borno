@@ -88,6 +88,24 @@
         button.clear-btn:hover {
             background-color: #d32f2f;
         }
+        a.docs-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 12px;
+            gap: 6px;
+            border-radius: 6px;
+            background-color: var(--success-color);
+            color: #fff;
+            text-decoration: none;
+            font: inherit;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        a.docs-btn:hover {
+            background-color: #d32f2f;
+            color: #fff;
+            text-decoration: none;
+        }
         
         .CodeMirror {
             height: 60vh;
